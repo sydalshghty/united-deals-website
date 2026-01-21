@@ -6,7 +6,7 @@ import store from './store/store.jsx';
 import { Provider } from 'react-redux';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <HashRouter basename="/united-deals-website">
+  <HashRouter basename="/">
     <Provider store={store}>
       <App />
     </Provider>
