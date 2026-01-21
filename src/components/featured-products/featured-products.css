@@ -1,0 +1,93 @@
+.featured-products .container .featured-products-content ul li,
+.computer-accessories .container  ul li{
+    position: relative;
+}
+.featured-products .container .featured-products-content ul li::before,
+.featured-products .container .featured-products-content ul li::after,
+.computer-accessories .container  ul li::before,
+.computer-accessories .container  ul li::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FA8232;
+    transition: width 0.5s ease;
+}
+.featured-products .container .featured-products-content ul li::before,
+.computer-accessories .container  ul li::before{
+    left: 50%;
+}
+.featured-products .container .featured-products-content ul li::after,
+.computer-accessories .container  ul li::after{
+    right: 50%;
+}
+.featured-products .container .featured-products-content ul li.active::before,
+.featured-products .container .featured-products-content ul li.active::after,
+.computer-accessories .container  ul li.active::before,
+.computer-accessories .container  ul li.active::after{
+    width: 50%;
+}
+.featured-products .container .featured-products-content .col-product,
+.computer-accessories .container .all-products-accessories .col-product{
+    border: 1px solid #E4E7E9;
+}
+.featured-products .container .featured-products-content .col-product .h-c-v-icons,
+.computer-accessories .container .all-products-accessories .col-product .h-c-v-icons{
+    background-color: rgba(191, 196, 196, 0.3);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.featured-products .container .featured-products-content .col-product:hover .h-c-v-icons,
+.computer-accessories .container .all-products-accessories .col-product:hover .h-c-v-icons{
+    opacity: 1;
+}
+.featured-products .container .featured-products-content .col-product:hover .h-c-v-icons div,
+.computer-accessories .container .all-products-accessories .col-product:hover .h-c-v-icons div{
+    transition: background-color 0.5s ease;
+}
+.featured-products .container .featured-products-content .col-product:hover .h-c-v-icons div svg,
+.computer-accessories .container .all-products-accessories .col-product:hover .h-c-v-icons div svg{
+    transition: color 0.5s ease;
+}
+.featured-products .container .featured-products-content .col-product:hover .h-c-v-icons div:hover,
+.computer-accessories .container .all-products-accessories .col-product:hover .h-c-v-icons div:hover{
+    background-color: #FA8232;
+}
+.featured-products .container .featured-products-content .col-product:hover .h-c-v-icons div:hover svg,
+.computer-accessories .container .all-products-accessories .col-product:hover .h-c-v-icons div:hover svg{
+    color: white;
+}
+@media (max-width: 1080px){
+    .featured-products .container .featured-products-content .heading-col h1,
+    .computer-accessories .container  .heading-col h1{
+        display: none;
+    }
+}
+@media (max-width: 992px){
+    .featured-products .container .featured-products-content .all-featured-products,
+    .computer-accessories .container .all-products-accessories{
+        justify-content: center;
+    }
+}
+@media (max-width: 768px){
+    .featured-products  .category-links,
+    .computer-accessories  .category-links{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1400px){
+    .featured-products,
+    .computer-accessories{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 768px){
+    .featured-products,
+    .computer-accessories{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

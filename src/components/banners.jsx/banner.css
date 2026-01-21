@@ -1,0 +1,9 @@
+@media (max-width: 768px){
+    .banners-departament{
+        margin-top: 70px;
+        margin-bottom: 10px;
+    }
+    .banners-departament .container .col-banners{
+        display: none;
+    }
+}
