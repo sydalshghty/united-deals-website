@@ -21,10 +21,10 @@ export default {
         secondary500: "#2DA5F3",
         colorf6f6f6: "#f6f6f6",
         warning400: "#EFD33D",
-        warning500: "#EBC80C",
         danger500: "#EE5858",
         primary100: "#FFE7D6",
-        primary500: "#FA8232"
+        primary500: "#FA8232",
+        gray50: "#F2F4F5"
       }
     },
   },
